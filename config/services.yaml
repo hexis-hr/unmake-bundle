@@ -1,0 +1,8 @@
+services:
+  hexis.unmake.entity:
+    class: Hexis\UnmakeBundle\Command\UnmakeEntityCommand
+    tags:
+      - { name: 'console.command', event: 'unmake:entity' }
+    arguments:
+      $entityManager: '@doctrine.orm.entity_manager'
+      $parameterBag: '@parameter_bag'

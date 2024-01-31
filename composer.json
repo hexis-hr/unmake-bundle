@@ -1,0 +1,39 @@
+{
+  "name": "hexis-hr/unmake-bundle",
+  "type": "symfony-bundle",
+  "description": "Unmake Bundle",
+  "keywords": [
+    "php",
+    "symfony",
+    "reusable bundle"
+  ],
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Hexis",
+      "homepage": "https://hexis.hr/"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Hexis\\UnmakeBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Hexis\\UnmakeBundle\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "symfony/dependency-injection": "^v6.0.0",
+    "symfony/config": "^v6.0.0",
+    "doctrine/doctrine-bundle": "^2.11",
+    "doctrine/doctrine-migrations-bundle": "^3.3",
+    "doctrine/orm": "^2.17"
+  },
+  "require-dev": {
+    "symfony/http-kernel": "^v6.0.0",
+    "phpunit/phpunit": "^10.5"
+  }
+}
